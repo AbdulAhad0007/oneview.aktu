@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU One View | Dr. A.P.J. Abdul Kalam Technical University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container-login100" style="background-image: url('bg-01.jpg');">
+        <div class="wrap-login100 p-4">
+            <div class="messagealert" id="alert_container"></div>
+
+            <div class="newlogin-image text-center">
+                <img src="FileHandler-new.png" alt="Logo" style="height: 100px;margin-bottom: 20px;">
+            </div>
+            <br />
+            <h2 class="login100-form-title">ऐकेटीयू वनव्यू</h2>
+
+            <form id="loginForm" onsubmit="return handleSubmit(event)">
+                <div class="mb-3">
+                    <input type="text" id="txtRollNo" maxlength="13" class="form-control" placeholder="अनुक्रमांक" required>
+                </div>
+                <div class="mb-3">
+                    <input type="date" id="txtDOB" class="form-control" required>
+                </div>
+
+                <div class="recaptcha-container">
+                    <input type="checkbox" id="recaptcha-checkbox">
+                    <label for="recaptcha-checkbox" class="checkbox-label">
+                        <span class="checkbox-border">
+                            <span class="checkmark">✔</span>
+                        </span>
+                        <span class="recaptcha-text">I'm not a robot</span>
+                    </label>
+                    <div class="recaptcha-logo">
+                        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA Logo">
+                        <span>reCAPTCHA</span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">खोजें</button>
+                </div>
+            </form>
+
+            <div class="footer text-center mt-3">
+                <p>
+                    यह डॉ ए पी जे अब्दुल कलाम तकनीकी विश्वविद्यालय लखनऊ की आधिकारिक ईo आरo पीo है।<br>
+                    (एoकेoटीoयूo-एसडीसी द्वारा संचालित)
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
